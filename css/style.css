@@ -1,0 +1,235 @@
+*{
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  transition: 0.2s;
+}
+
+.wrapper{
+  min-height: 100vh;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 8px;
+}
+button,input{
+  cursor: pointer;
+  outline: none;
+  border: none;
+  background: transparent;
+  height: 100%;
+}
+button:hover{
+  background: #aaa;
+}
+.borderRight:after{
+  content: '';
+  width: 1px;
+  height: 20px;
+  background: #2b2b2b;
+  position: absolute;
+  top: 5px;
+  right: 0;
+}
+
+.p-relative{
+  position: relative;
+}
+
+@media(min-width: 1300px){
+  .pc-none{
+    display: none !important;
+  }
+}
+@media(max-width: 1300px){
+  .mobile-none{
+    display: none !important;
+  }
+
+  
+  .borderRight:after{
+    height: 15px;
+    top: 5px;
+  }
+}
+
+.d-none{
+  display: none;
+}
+
+/****************** Theme Section ******************/
+
+.lightTheme{
+  background: #fff;
+  color: #111;
+}
+.darkTheme{
+  background: #2b2b2b;
+  color: #f3f3f3;
+}
+
+.lightThemeWrapper{
+  background: #eee;
+}
+.darkThemeWrapper{
+  background: #6a6a6a;
+}
+
+.topThemeEditor{
+  width: 100%;
+  height: calc(40vh - 16px);
+  order: 2;
+  margin-top: 10px;
+}
+.sideThemeEditor{
+  width: 40%;
+  height: calc(100vh - 16px);
+  order: 1;
+}
+
+.topThemeOutput{
+  width: 100%;
+  height: calc(60vh - 10px);
+  order: 1;
+}
+.sideThemeOutput{
+  width: calc(60% - 10px);
+  order: 2;
+}
+
+
+/***************** Editor Section *****************/
+.editor{
+  overflow: hidden;
+  min-width: 260px;
+}
+.editor-top{
+  margin-bottom: 20px;
+  display: flex;
+  color: #111;
+  min-height: 30px;
+}
+.editor-top-inner{
+  display: flex;
+  flex-wrap: wrap;
+  background: #c5c5c5;
+  border-radius: 0px 0px 10px 0px;
+}
+
+.editor-top .executeBtn{
+  width: 120px;
+  line-height: 25px;
+  background: #028e02;
+  color: #fff;
+  border-radius: 0px 0px 10px 0px;
+}
+.editor-top .executeBtn:hover{
+  background: #008000;
+}
+
+.toggleRotate button{
+  width: 60px;
+  position: relative;
+}
+
+.fontSize{
+  width: 80px;
+  height: 100%;
+  line-height: 30px;
+  display: flex;
+  justify-content: space-between;
+}
+.fontSize:hover{
+  background: #aaa;
+}
+.fontSize button{
+  width: 35%;  
+  font-size: 20px;
+}
+#colorPicker{
+  width: 30px;
+}
+.saveBtn{
+  width: 60px;
+}
+
+
+
+.editor form{
+  width: 100%;
+  height: 100%;
+}
+.editor textarea{
+  width: 100%;
+  height: calc(100% - 50px);
+  padding: 0px 5px;
+  border: 0;
+  outline: 0;
+  resize: none;
+  font-size: 14px;
+}
+
+/* width */
+.editor textarea::-webkit-scrollbar {
+  width: 4px;
+}
+
+/* Track */
+.editor textarea::-webkit-scrollbar-track {
+  background: #2b2b2b;
+}
+
+/* Handle */
+.editor textarea::-webkit-scrollbar-thumb {
+  background: #888;
+  border-radius: 5px;
+}
+
+/* Handle on hover */
+.editor textarea::-webkit-scrollbar-thumb:hover {
+  background: #555;
+}
+
+@media(max-width: 1300px){
+  .editor-top{
+    margin-bottom: 15px;
+    min-height: 20px;
+  }
+  
+  .editor-top .executeBtn{
+    width: 60px;
+  }
+  
+  .toggleRotate button{
+    width: 50px;
+  }
+  .toggleRotate button:last-child{
+    width: 50px;
+  }
+  
+  .fontSize{
+    width: 40px;
+    justify-content: space-around;
+  }
+  .fontSize button{
+    font-size: 18px;
+  }
+  .saveBtn{
+    width: 40px;
+  }
+
+  #colorPicker{
+    width: 20px;
+  }
+}
+@media(max-width: 650px){
+  .toggleRotate button:last-child{
+    display: none;
+  }  
+}
+
+
+/***************** Output Section *****************/
+object{
+  background: #fff;
+}
