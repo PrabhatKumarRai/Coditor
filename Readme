@@ -1,4 +1,4 @@
-#Coditor is a PHP Code Editor/Compiler
+#Coditor is a PHP Code Editor/Compiler.
 
 --Technologies Used--
 => Html
@@ -14,3 +14,10 @@
 => You can rename the project directory as per your requirement.
 
 => You can now run the project and start Coding with Coditor. 
+
+-- Tested With Languages (Runs) --
+=> HTML
+=> CSS
+=> Javascript
+=> jQuery
+=> PHP
