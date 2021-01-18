@@ -1,4 +1,6 @@
-#Coditor is a PHP Code Editor/Compiler.
+#Coditor is a PHP based lightweight code editor/compiler that supports multiple languages (mentioned in tested with languages section).
+Coditor features dark and light mode themes with the option to change the orientation from portrait to landscape.
+Coditor also supports user desired text color and font size. Save/download your code from Coditor with the click of a button.
 
 --Technologies Used--
 => Html
@@ -10,9 +12,7 @@
 
 -- Installation --
 => Download and Paste the directory contents in your server's root folder.
-
 => You can rename the project directory as per your requirement.
-
 => You can now run the project and start Coding with Coditor. 
 
 -- Tested With Languages (Runs) --
@@ -21,3 +21,5 @@
 => Javascript
 => jQuery
 => PHP
+
+Screenshots are available in the "Project Screenshots" folder.
